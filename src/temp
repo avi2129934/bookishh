@@ -1,0 +1,30 @@
+import './App.css';
+import BookCard from './components/BookCard';
+import TopBar from './components/TopBar';
+import logJSONData from './getbook';
+import SearchBookCard from './components/SearchBookCard';
+import SearchBar from './components/SearchBar';
+import { useState } from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+<!-- 
+function App() {
+  const [data,setdata] = useState([]);
+  return (
+    <div className="App">
+      <TopBar />
+      <div className='main-content'>
+        <SearchBar setdata={setdata}/>
+        <div className='row'>
+          <div className='sidebar'>SIDEBAR</div>
+          <div className='search-result-container'>
+            {data.map((props)=>{
+              return <SearchBookCard data={props}/>
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App; -->

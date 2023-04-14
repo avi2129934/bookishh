@@ -1,0 +1,73 @@
+.margin-div{
+    width: auto;
+}
+.explore-front{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.explore-text{
+    width: 30vw;
+    padding: 20px;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: oblique;
+    text-shadow: 1px 1px 1px rgba(27,27,27,0.8);
+}
+.explore-img{
+    width: 70vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.explore-img img{
+    width: 70vw;
+    filter: drop-shadow(3px 3px 2px rgba(255,255,255,0.8));
+    height: auto;
+    position: relative;
+    transform: translateY(-40px);
+}
+.trending-section{
+    display: flex;
+    /* background-image: url('https://freerangestock.com/sample/143731/abstract-hand-drawn-spirals-repeat-pattern-on-black-.jpg'); */
+    background-image: url('https://cdn.wallpapersafari.com/4/95/ck7Oy9.jpg');
+    background-size: 10%;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:766px){
+    .explore-front{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .margin-div{
+        height: 40px;
+    }
+    .explore-text{
+        width: 90vw;
+        font-size: 16px;
+        margin-right: 40px;
+        justify-content: left;
+    }
+    .explore-img{
+        width: 90vw;
+    }
+    .explore-img img{
+        top: 30px;
+        left: -25px;
+        width: 100vw;
+    }
+}
+@media (max-width:976px){
+    .margin-div{
+        height: 30px;
+    }
+    .explore-text{
+        font-size: 18px;
+    }
+}

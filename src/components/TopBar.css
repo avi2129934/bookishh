@@ -1,0 +1,10 @@
+.topbar-container{
+    height: 50px;
+    background-color: cadetblue;
+    width: 100vw;
+}
+.topbar-container i{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

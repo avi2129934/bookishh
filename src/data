@@ -1,0 +1,51 @@
+const data = [
+  {
+    name: 'If He Had Been with Me',
+    author: 'Laura Nowlin',
+    price: 8.99,
+    genre: ['Fiction','Romance'],
+    rating: 4.0,
+    cover: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41m6p4QOnRL._SX331_BO1,204,203,200_.jpg'
+  },
+  {
+    name: 'Harry Potter',
+    author: 'JK Rowling',
+    price: 9.49,
+    genre: ['Fiction','Adventure','Fantasy'],
+    rating: 4.2,
+    cover: 'https://media.harrypotterfanzone.com/deathly-hallows-us-childrens-edition.jpg'
+  },
+  {
+    name: 'The Shining',
+    author: 'Stephan King',
+    price: 10.99,
+    genre: ['Horror','Thriller'],
+    rating: 4.6,
+    cover: 'https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg'
+  },
+]
+
+const [i,seti] = useState([1,2]);
+  const [bookdata,setdata] = useState([data[i[0]],data[i[1]]]);
+  const handleClickright = ()=>{
+    const newi = i.map((val)=>{
+      return (val+1)%3;
+    })
+    seti(newi);
+    console.log(i);
+    setdata([data[i[0]],data[i[1]]]);
+  }
+  const handleClickleft = ()=>{
+    const newi = i.map((val)=>{
+      return (val-1+3)%3;
+    })
+    seti(newi);
+    console.log(i);
+    setdata([data[i[0]],data[i[1]]]);
+  }
+
+<div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickleft}><i class="fa-solid fa-arrow-left"></i></button></div>
+    {bookdata.map((props)=>{
+    return <BookCard data={props}/>
+    })}
+<div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickright}><i class="fa-solid fa-arrow-right"></i></button></div>

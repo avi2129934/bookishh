@@ -1,0 +1,26 @@
+.card-row-container{
+    display: flex;
+    margin: 20px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255,0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+}
+.book-card-row{
+    display: flex;
+    align-items: center;
+}
+.cardrow-bg{
+    background-image: url('../images/bgstand.png');
+    background-size: 530px 495px;
+    height: 450px;
+    width:fit-content
+}
+.card-row-heading{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', sans-serif
+}

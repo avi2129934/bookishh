@@ -1,0 +1,81 @@
+*{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.cardbody{
+    height: 300px;
+    width: 200px;
+    box-shadow: 5px 5px 20px rgb(27,27,27);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+}
+.book-cover{
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+}
+#star-icon{
+    margin-left: 5px;
+}
+#rating{
+    padding: 5px;
+    padding-bottom: 3px;
+}
+.void{
+    height: 50px;
+    width: 300px;
+}
+.details{
+    transition: 0.2s;
+    padding: 5px;
+    background-image: linear-gradient(rgba(27, 27, 27, 0),rgba(27, 27, 27, 0.7),rgba(27, 27, 27, 0.9),black);
+    transform: translateY(-50px);
+    color: whitesmoke;
+}
+.tags{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+h3{
+    font-size: 20px;
+    text-shadow: 2px 2px rgba(70, 70, 70, 0.6);
+    line-height: 27px;
+    font-weight: 900;
+}
+label{
+    margin-bottom: none;
+    margin-right: 3px;
+}
+#author span{
+    font-size: 13px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+#author{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.buybutton{
+    display: flex;
+}
+.buybutton button{
+    padding-bottom: 0px;
+    padding-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+#price{
+    color: black;
+    font-weight:bolder;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.cardbody:hover .details{
+    transition: 0.2s;
+    padding: 5px;
+    padding-bottom: 10px;
+    transform: translateY(-100%);
+}

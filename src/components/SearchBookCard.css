@@ -1,0 +1,101 @@
+.result-card{
+    display: flex;
+    margin: 10px;
+    width: 90%;
+    height: 180px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color:rgb(245, 245, 245,0.8);
+    align-items: center;
+}
+.result-card img{
+    margin: 10px;
+    height: 150px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px rgba(27,27,27,0.6);
+}
+.result-card-info{
+    transform: translateY(-10px);
+    padding: 10px;
+}
+.result-card-info span{
+    display: block;
+    margin-left: 15px;
+}
+.result-card-header{
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.2rem;
+    font-weight: 900;
+}
+.result-card-author{
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 12px;
+}
+.result-card-ratings{
+    font-size: 9px;
+}
+.result-card-book-type{
+    font-size: 12px;
+}
+.result-card-price{
+    font-size: 16px;
+}
+#res-card-atc{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.result-card button{
+    font-size: 12px;
+}
+.price-na{
+    display: block;
+    margin-left: 15px;
+    color: red;
+}
+@media screen and (min-width:700px){
+    .result-card{
+        display: flex;
+        width: 95%;
+        height: 220px;
+        background-color:rgb(245, 245, 245,0.8);
+    }
+    .result-card img{
+        margin: 10px;
+        height: 200px;
+        width: 130px;
+        box-shadow: 2px 3px 15px rgba(27,27,27,0.6);
+    }
+    .result-card-info span{
+        display: block;
+        margin-left: 30px;
+    }
+    .result-card-header{
+        font-size: 26px;
+        font-weight: 900;
+    }
+    .result-card-author{
+        font-style: oblique;
+        padding-top: 5px;
+        font-weight: 900;
+        font-size: 16px;
+    }
+    .result-card-ratings{
+        font-size: 15px;
+    }
+    .result-card-book-type{
+        font-size: 12px;
+    }
+    .result-card-price{
+        font-size: 24px;
+    }
+    #res-card-atc{
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .result-card button{
+        font-size: 18px;
+    }
+}

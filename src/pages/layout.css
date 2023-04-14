@@ -1,0 +1,35 @@
+.topbar{
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    background-color: transparent;
+    justify-content: center;
+    /* transform: translateX(20vh); */
+    z-index: 100;
+}
+.topbar div{
+    width: 100px;
+    background-color: transparent;
+    height: 30px;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    z-index: 100;
+}
+.topbar span{
+    font-weight: 900;
+    font-size: 18px;
+}
+.topbar div{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.topbar div:hover{
+    background-color: darkgray;
+    transition: 0.5s;
+}
+.layout-container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
