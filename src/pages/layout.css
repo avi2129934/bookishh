@@ -4,7 +4,6 @@
     position: absolute;
     background-color: transparent;
     justify-content: center;
-    /* transform: translateX(20vh); */
     z-index: 100;
 }
 .topbar div{

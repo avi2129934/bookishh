@@ -1,42 +1,65 @@
-.front{
-    display: flex;
-    background-image: url('../images/front-sm.jpg');
-    background-size: cover;
-    justify-content: right;
-    width: 100vw;
+#home-div {
     height: 100vh;
-}
-.front-bg{
     width: 100vw;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
-.text-box{
-    width: 500px;
-    position: relative;
-    top: 10%;
-    left: -10%;
+  
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
 }
 
-.front-heading{
-    font-weight: 900;
-    text-shadow: 2px 2px 10px rgba(27,27,27,0.4);
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#books-span{
+.front-heading {
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.book-span{
+    color: white;
+    background-color: transparent;
     font-family: 'Lucida Handwriting',cursive;
-    color: transparent;
-    background: linear-gradient(45deg,rgb(203, 92, 255),rgb(255, 0, 111));
+    transition: text-shadow 1s ease;
     background-clip: text;
 }
-.front-desc{
-    width: 400px;
-    font-weight: 600;
+
+.front-desc {
+    font-size: 2.2vw;
+    width: 80vw;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.5;
 }
-@media (min-width: 767px){
-    .front{
-        background-image: url('../images/front-lg.jpg');
-        background-size: cover;
-    }
+
+#explore-btn {
+    display: inline-block;
+    transition: background-color 1s ease;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
+
+#explore-btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+  
