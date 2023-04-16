@@ -1,6 +1,5 @@
 async function logJSONData(book_name) {
     const key = process.env.REACT_APP_KEY
-    console.log(key)
     const response = await fetch("https://www.googleapis.com/books/v1/volumes?q="+book_name+"&key="+key).catch(err=>{
         return 'No Match Found';
     });
