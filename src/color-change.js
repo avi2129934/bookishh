@@ -1,6 +1,6 @@
 const colorChange = ()=>{
   const getrnd = ()=>{
-    return Math.floor(Math.random() * 20);
+    return Math.floor(Math.random())+1*20;
   }
   const colors = ["#FF4136", "#0074D9", "#2ECC40", "#FFDC00", "#B10DC9",'#26de09',"#f4d422","#6fbec1","#eaeca5","#2fcea1","#b76280","#df379e"]
     let index = 0;

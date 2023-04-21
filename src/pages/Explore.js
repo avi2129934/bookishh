@@ -68,9 +68,9 @@ export default function Explore() {
                 <div className='explore-img'><img src={genrecollage} alt='background'></img></div>
             </div>
             <div className='trending-section'>
-                <div className='row1'><CardRow props={data.weekly_best_seller} heading='Weekly Best Sellers'/>
+                <div className='trending-card-row'><CardRow props={data.weekly_best_seller} heading='Weekly Best Sellers'/>
                 <CardRow props={data.weekly_best_seller} heading='Monthly Best Sellers'/></div>
-                <div className='row2'><CardRow props={data.weekly_best_seller} heading='Top Thrillers'/>
+                <div className='trending-card-row'><CardRow props={data.weekly_best_seller} heading='Top Thrillers'/>
                 <CardRow props={data.weekly_best_seller} heading='Top Fiction'/></div>
             </div>
         </div>
