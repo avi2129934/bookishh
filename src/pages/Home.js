@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './home.css'
+
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
                 <p className="front-desc">
                     Discover your next great read at Bookishh. From bestsellers to hidden gems, we've got the books you won't want to put down. Explore our curated selection of titles, read insightful reviews, and join the conversation with fellow book lovers. It's time to fall in love with reading all over again.
                 </p>
-                <a href="/bookishh/explore" className="btn" id='explore-btn'>Explore Now</a>
+                <Link to='explore' className="btn" id='explore-btn'>Explore Now</Link>
             </div>
         </div>
     </div>
