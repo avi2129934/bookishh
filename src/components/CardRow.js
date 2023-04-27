@@ -24,15 +24,17 @@ export default function CardRow(props) {
         setdata([data[i[0]],data[i[1]]]);
     }
   return (
-    <div className='card-row-container'>
-        <div className='cardrow-bg'>
-            <h2 className='card-row-heading'>{heading}</h2>
-            <div className='book-card-row'>
-                <div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickleft}><i class="fa-solid fa-arrow-left"></i></button></div>
-                    {bookdata.map((props,index)=>{
-                    return <BookCard data={props} id={index}/>
-                    })}
-                <div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickright}><i class="fa-solid fa-arrow-right"></i></button></div>
+    <div className='react-comp'>
+        <div className='card-row-container'>
+            <div className='cardrow-bg'>
+                <h2 className='card-row-heading'>{heading}</h2>
+                <div className='book-card-row'>
+                    <div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickleft}><i class="fa-solid fa-arrow-left"></i></button></div>
+                        {bookdata.map((props,index)=>{
+                        return <BookCard data={props} id={index}/>
+                        })}
+                    <div id = "nav-arrow"><button className='btn btn-dark' onClick={handleClickright}><i class="fa-solid fa-arrow-right"></i></button></div>
+                </div>
             </div>
         </div>
     </div>

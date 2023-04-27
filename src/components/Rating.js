@@ -28,13 +28,14 @@ export default function Rating({props,color}) {
     }
     const rat_array = convert(parseFloat(props))
     return (
-        <div>
+        <div className='react-comp'>
             <span className='ratings-five-star' style={{marginLeft:'0px'}}>
                 {rat_array.map((item,index) =>{
                     if(item<=1 && item>0.7) return <i className="fa-solid fa-star fa-sm" id={index} style={{color:`${color}`}}></i>
                     else if(item>=0 && item<=0.2) return <i className="fa-regular fa-star fa-sm" id={index} style={{color:`${color}`}}></i>
                     else return <i className="fa-solid fa-star-half-stroke" id={index} style={{color:`${color}`}}></i>
                 })}
+                <span className='badge bg-dark' style={{color:`${color}`}}>{props}</span>
             </span>
         </div>
     )

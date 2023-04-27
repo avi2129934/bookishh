@@ -8,18 +8,19 @@
     height: fit-content;
     background-color: black;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start
 }
 .explore-text{
+    font-size: 2vw;
+    padding-top: 10%;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.5;
     width: 30vw;
     justify-content: center;
     position: relative;
     top: 0px;
     color: white;
-    font-size: 22px;
-    font-weight: 600;
-    font-style: oblique;
-    text-shadow: 1px 1px 1px rgba(27,27,27,0.8);
 }
 .explore-img{
     width: 60vw;
@@ -37,10 +38,11 @@
 .trending-section{
     display: flex;
     background-color: black;
-    flex-direction:column;
+    flex-direction: column;
     width: 100vw;
     height: fit-content;
     justify-content: center;
+    align-items: center;
 }
 .trending-card-row{
     display: flex;
@@ -58,9 +60,13 @@
     }
     .explore-text{
         width: 90vw;
-        font-size: 16px;
+        padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 14px;
         margin-right: 40px;
-        justify-content: left;
+        text-align: center;
+        justify-content: center;
     }
     .explore-img{
         width: 90vw;
@@ -79,6 +85,6 @@
         height: 30px;
     }
     .explore-text{
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -15,7 +15,7 @@ export default function SearchBookCard({data}) {
   }
   return (
     <div className='result-card'>
-      <div className='coverimage'><img src={imgurl}/></div>
+      <div className='coverimage'><img src={imgurl} alt='book-cover'/></div>
       <div className='result-card-info'>
         <span className='result-card-header'>{data? data.title:'Book Name'}</span>
         <span className='result-card-author'>{data && data.authors? data.authors.map((author)=>{

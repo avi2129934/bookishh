@@ -10,7 +10,6 @@ export default function BookCard(props) {
         return (<div className='emptycard' style={{height:'300px',width:'200px'}}></div>)
     }
   return (
-    <div>
         <div className='cardbody'>
             <img src= {data.cover} alt='cover' className='book-cover'></img>
             <div className='details'>
@@ -32,6 +31,5 @@ export default function BookCard(props) {
                 </div>
             </div>
         </div>
-    </div>
   )
 }
